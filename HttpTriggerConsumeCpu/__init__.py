@@ -6,8 +6,6 @@ from cpu_load_generator import load_single_core, load_all_cores, from_profile
 def main(req: func.HttpRequest) -> func.HttpResponse:
     logging.info('Python HTTP trigger function processed a request.')
 
-    # variable = something if condition else something_else
-
     core_num = -1
     load = .25
     duration = 10
